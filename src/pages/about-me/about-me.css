@@ -1,0 +1,36 @@
+body .aboutMe__sides {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+}
+
+body .aboutMe__left img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.helloWorld {
+    width: 0%;
+    font-weight: 500;
+    font-size: 2.4rem;
+  
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .12em solid red;
+  
+    animation: typing 1s steps(24, end) .6s both, blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: red; }
+  }
