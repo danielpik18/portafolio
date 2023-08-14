@@ -1,0 +1,33 @@
+.slide-right {
+    animation: slide-right 0.85s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-top {
+    animation: slide-top 0.85s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+
+@keyframes slide-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        overflow: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

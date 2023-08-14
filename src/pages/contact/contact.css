@@ -1,0 +1,32 @@
+
+body .contact {
+    width: 100%;
+    max-width: 400px;
+}
+
+body .contact__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: #FBFBFF;
+    border: 1px dashed var(--lavender-blush);
+    border-radius: 16px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+body .contact__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+body .contact__item a {
+    color: var(--cambridge-blue);
+}
+
+body .contact__item img {
+    width: 30px;
+}

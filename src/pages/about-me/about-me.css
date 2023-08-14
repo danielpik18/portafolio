@@ -1,22 +1,51 @@
+body .aboutMe {
+  max-width: 600px;
+}
+
 body .aboutMe__sides {
   display: grid;
   grid-template-columns: 150px 1fr;
+  align-items: center;
   gap: 40px;
 }
 
 body .aboutMe__left img {
     max-width: 150px;
     border-radius: 50%;
+    box-shadow: 6px 7px 20px 0px var(--paynes-gray);
+}
+
+body .aboutMe__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body .aboutMe__right p {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: .03px;
+  color: var(--p);
+  font-weight: 300;
+}
+
+body .aboutMe__right p > strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+body .aboutMe__right p > img {
+  max-width: 20px;
+  margin-bottom: -4px;
 }
 
 .helloWorld {
     width: 0%;
-    font-weight: 500;
-    font-size: 2.4rem;
+    max-width: 300px;
   
     white-space: nowrap;
     overflow: hidden;
-    border-right: .12em solid red;
+    border-right: .12em solid var(--cambridge-blue);
   
     animation: typing 1s steps(24, end) .6s both, blink-caret .5s step-end infinite;
   }
@@ -32,5 +61,5 @@ body .aboutMe__left img {
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: red; }
+    50% { border-color: var(--cambridge-blue); }
   }
